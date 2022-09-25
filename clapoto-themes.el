@@ -108,11 +108,11 @@ DESCRIPTION, PALETTE and BODY share their usage with `autothemer'."
                          (hl-line             (:background clapoto-bg-1))
                          (region              (:background clapoto-bg+2)) ;;selection
                          (secondary-selection (:background clapoto-bg+1))
-                         (minibuffer-prompt   (:foreground clapoto-intense_hue1 :bold t))
+                         (minibuffer-prompt   (:foreground clapoto-intense_hue5 :bold t))
                          (vertical-border     (:foreground clapoto-bg-1))
                          (internal-border     (:background clapoto-bg))
                          (window-divider      (:foreground clapoto-bg-1))
-                         (link                (:foreground clapoto-neutral_hue5 :underline t))
+                         (link                (:foreground clapoto-neutral_hue4 :underline t))
                          (shadow              (:foreground clapoto-fg-2))
 
                          ;; Built-in syntax

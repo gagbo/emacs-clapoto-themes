@@ -68,24 +68,24 @@
   (clapoto-faded_magenta "#FABADB" nil)
 
   ;; Test contrast against bg and faded variant
-  (clapoto-intense_hue1 clapoto-intense_green)
-  (clapoto-intense_hue2 clapoto-intense_yellow)
-  (clapoto-intense_hue3 clapoto-intense_aqua)
-  (clapoto-intense_hue4 clapoto-intense_blue)
+  (clapoto-intense_hue1 clapoto-intense_aqua)
+  (clapoto-intense_hue2 clapoto-intense_blue)
+  (clapoto-intense_hue3 clapoto-intense_purple)
+  (clapoto-intense_hue4 clapoto-intense_magenta)
   (clapoto-intense_hue5 clapoto-intense_orange)
 
   ;; Test contrast against bg variant
-  (clapoto-neutral_hue1 clapoto-neutral_green)
-  (clapoto-neutral_hue2 clapoto-neutral_yellow)
-  (clapoto-neutral_hue3 clapoto-neutral_aqua)
-  (clapoto-neutral_hue4 clapoto-neutral_blue)
+  (clapoto-neutral_hue1 clapoto-neutral_aqua)
+  (clapoto-neutral_hue2 clapoto-neutral_blue)
+  (clapoto-neutral_hue3 clapoto-neutral_purple)
+  (clapoto-neutral_hue4 clapoto-neutral_magenta)
   (clapoto-neutral_hue5 clapoto-neutral_orange)
 
   ;; Test contrast against fg (and bright) variant
-  (clapoto-faded_hue1 clapoto-faded_green)
-  (clapoto-faded_hue2 clapoto-faded_yellow)
-  (clapoto-faded_hue3 clapoto-faded_aqua)
-  (clapoto-faded_hue4 clapoto-faded_blue)
+  (clapoto-faded_hue1 clapoto-faded_aqua)
+  (clapoto-faded_hue2 clapoto-faded_blue)
+  (clapoto-faded_hue3 clapoto-faded_purple)
+  (clapoto-faded_hue4 clapoto-faded_magenta)
   (clapoto-faded_hue5 clapoto-faded_orange)
 
   (clapoto-comments clapoto-neutral_green)
