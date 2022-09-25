@@ -180,20 +180,22 @@ DESCRIPTION, PALETTE and BODY share their usage with `autothemer'."
                          (rainbow-delimiters-depth-12-face  (:foreground clapoto-delimiter-four))
 
                          ;; Telephone line
+                         (telephone-line-evil
+                          (:weight 'bold :foreground clapoto-bg+1 :inherit 'mode-line))
                          (telephone-line-evil-emacs
-                          (:background clapoto-intense_purple :inherit 'telephone-line-evil))
+                          (:background clapoto-neutral_purple :inherit 'telephone-line-evil))
                          (telephone-line-evil-insert
-                          (:background clapoto-intense_green :inherit 'telephone-line-evil))
+                          (:background clapoto-neutral_green :inherit 'telephone-line-evil))
                          (telephone-line-evil-motion
-                          (:background clapoto-intense_blue :inherit 'telephone-line-evil))
+                          (:background clapoto-neutral_blue :inherit 'telephone-line-evil))
                          (telephone-line-evil-normal
-                          (:background clapoto-intense_red :inherit 'telephone-line-evil))
+                          (:background clapoto-neutral_red :inherit 'telephone-line-evil))
                          (telephone-line-evil-visual
-                          (:background clapoto-intense_orange :inherit 'telephone-line-evil))
+                          (:background clapoto-neutral_orange :inherit 'telephone-line-evil))
                          (telephone-line-evil-operator
-                          (:background clapoto-intense_magenta :inherit 'telephone-line-evil))
+                          (:background clapoto-neutral_magenta :inherit 'telephone-line-evil))
                          (telephone-line-evil-god
-                          (:background clapoto-intense_teal :inherit 'telephone-line-evil)))
+                          (:background clapoto-neutral_teal :inherit 'telephone-line-evil)))
 
                         ,@body))
 
