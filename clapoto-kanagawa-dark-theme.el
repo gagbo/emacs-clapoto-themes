@@ -38,57 +38,57 @@
   (clapoto-black "#000000" nil)
 
   ;; Test contrast against bg and faded variant
-  (clapoto-intense_red     "#E82424" nil)
-  (clapoto-intense_orange  "#FF9E3B" nil)
-  (clapoto-intense_yellow  "#DCA561" nil)
-  (clapoto-intense_green   "#76946A" nil)
-  (clapoto-intense_aqua    "#6A9589" nil)
-  (clapoto-intense_blue    "#7E9CD8" nil)
-  (clapoto-intense_purple  "#957FB8" nil)
-  (clapoto-intense_magenta "#D27E99" nil)
+  (clapoto-red_int     "#E82424" nil)
+  (clapoto-orange_int  "#FF9E3B" nil)
+  (clapoto-yellow_int  "#DCA561" nil)
+  (clapoto-green_int   "#76946A" nil)
+  (clapoto-aqua_int    "#6A9589" nil)
+  (clapoto-blue_int    "#7E9CD8" nil)
+  (clapoto-purple_int  "#957FB8" nil)
+  (clapoto-magenta_int "#D27E99" nil)
 
   ;; Test contrast against bg variant
-  (clapoto-neutral_red     "#E46876" nil)
-  (clapoto-neutral_orange  "#FFA066" nil)
-  (clapoto-neutral_yellow  "#E6C384" nil)
-  (clapoto-neutral_green   "#98BB6C" nil)
-  (clapoto-neutral_aqua    "#7AA89F" nil)
-  (clapoto-neutral_blue    "#658594" nil)
-  (clapoto-neutral_purple  "#957FB8" nil)
-  (clapoto-neutral_magenta "#D27E99" nil)
+  (clapoto-red     "#E46876" nil)
+  (clapoto-orange  "#FFA066" nil)
+  (clapoto-yellow  "#E6C384" nil)
+  (clapoto-green   "#98BB6C" nil)
+  (clapoto-aqua    "#7AA89F" nil)
+  (clapoto-blue    "#658594" nil)
+  (clapoto-purple  "#957FB8" nil)
+  (clapoto-magenta "#D27E99" nil)
 
   ;; Test contrast against fg (and intense) variant
-  (clapoto-faded_red     "#43242B" nil)
-  (clapoto-faded_orange  "#43242B" nil)
-  (clapoto-faded_yellow  "#49443C" nil)
-  (clapoto-faded_green   "#2B3328" nil)
-  (clapoto-faded_aqua    "#223249" nil)
-  (clapoto-faded_blue    "#223249" nil)
-  (clapoto-faded_purple  "#252535" nil)
-  (clapoto-faded_magenta "#352535" nil)
+  (clapoto-red_bg     "#43242B" nil)
+  (clapoto-orange_bg  "#43242B" nil)
+  (clapoto-yellow_bg  "#49443C" nil)
+  (clapoto-green_bg   "#2B3328" nil)
+  (clapoto-aqua_bg    "#223249" nil)
+  (clapoto-blue_bg    "#223249" nil)
+  (clapoto-purple_bg  "#252535" nil)
+  (clapoto-magenta_bg "#352535" nil)
 
   ;; Test contrast against bg and faded variant
-  (clapoto-intense_hue1 clapoto-intense_purple)
-  (clapoto-intense_hue2 clapoto-intense_yellow)
-  (clapoto-intense_hue3 clapoto-intense_aqua)
-  (clapoto-intense_hue4 clapoto-intense_magenta)
-  (clapoto-intense_hue5 clapoto-intense_orange)
+  (clapoto-accent1_int clapoto-purple_int)
+  (clapoto-accent2_int clapoto-yellow_int)
+  (clapoto-accent3_int clapoto-aqua_int)
+  (clapoto-accent4_int clapoto-magenta_int)
+  (clapoto-accent5_int clapoto-orange_int)
 
   ;; Test contrast against bg variant
-  (clapoto-neutral_hue1 clapoto-neutral_purple)
-  (clapoto-neutral_hue2 clapoto-neutral_yellow)
-  (clapoto-neutral_hue3 clapoto-neutral_aqua)
-  (clapoto-neutral_hue4 clapoto-neutral_magenta)
-  (clapoto-neutral_hue5 clapoto-neutral_orange)
+  (clapoto-accent1 clapoto-purple)
+  (clapoto-accent2 clapoto-yellow)
+  (clapoto-accent3 clapoto-aqua)
+  (clapoto-accent4 clapoto-magenta)
+  (clapoto-accent5 clapoto-orange)
 
   ;; Test contrast against fg (and bright) variant
-  (clapoto-faded_hue1 clapoto-faded_purple)
-  (clapoto-faded_hue2 clapoto-faded_yellow)
-  (clapoto-faded_hue3 clapoto-faded_aqua)
-  (clapoto-faded_hue4 clapoto-faded_magenta)
-  (clapoto-faded_hue5 clapoto-faded_orange)
+  (clapoto-accent1_bg clapoto-purple_bg)
+  (clapoto-accent2_bg clapoto-yellow_bg)
+  (clapoto-accent3_bg clapoto-aqua_bg)
+  (clapoto-accent4_bg clapoto-magenta_bg)
+  (clapoto-accent5_bg clapoto-orange_bg)
 
-  (clapoto-comments clapoto-neutral_fg-2)
+  (clapoto-comments clapoto-fg-2)
 
   ;; Package specific colors
   (clapoto-delimiter-one   "#458588" nil)
@@ -99,12 +99,12 @@
  (custom-theme-set-variables 'clapoto-kanagawa-dark
                              `(ansi-color-names-vector
                                [,clapoto-bg-1
-                                ,clapoto-faded_red
-                                ,clapoto-faded_green
-                                ,clapoto-faded_yellow
-                                ,clapoto-faded_blue
-                                ,clapoto-faded_purple
-                                ,clapoto-faded_aqua
+                                ,clapoto-red_bg
+                                ,clapoto-green_bg
+                                ,clapoto-yellow_bg
+                                ,clapoto-blue_bg
+                                ,clapoto-purple_bg
+                                ,clapoto-aqua_bg
                                 ,clapoto-fg-1])
                              `(pdf-view-midnight-colors '(,clapoto-fg . ,clapoto-bg))))
 
