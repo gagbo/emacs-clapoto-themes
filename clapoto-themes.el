@@ -69,7 +69,7 @@
 ;; - clapoto-intense_orange
 ;; - clapoto-intense_yellow
 ;; - clapoto-intense_green
-;; - clapoto-intense_teal
+;; - clapoto-intense_aqua
 ;; - clapoto-intense_blue
 ;; - clapoto-intense_purple
 ;; - clapoto-intense_magenta
@@ -78,7 +78,7 @@
 ;; - clapoto-neutral_orange
 ;; - clapoto-neutral_yellow
 ;; - clapoto-neutral_green
-;; - clapoto-neutral_teal
+;; - clapoto-neutral_aqua
 ;; - clapoto-neutral_blue
 ;; - clapoto-neutral_purple
 ;; - clapoto-neutral_magenta
@@ -87,7 +87,7 @@
 ;; - clapoto-faded_orange
 ;; - clapoto-faded_yellow
 ;; - clapoto-faded_green
-;; - clapoto-faded_teal
+;; - clapoto-faded_aqua
 ;; - clapoto-faded_blue
 ;; - clapoto-faded_purple
 ;; - clapoto-faded_magenta
@@ -132,7 +132,7 @@ DESCRIPTION, PALETTE and BODY share their usage with `autothemer'."
                          (warning             (:foreground clapoto-intense_orange :bold t))
                          (alert-low-face      (:foreground clapoto-intense_blue))
                          (trailing-whitespace (:background clapoto-intense_red))
-                         (escape-glyph        (:foreground clapoto-intense_teal))
+                         (escape-glyph        (:foreground clapoto-intense_aqua))
                          (header-line         (:background clapoto-bg+1 :foreground clapoto-fg+1 :box nil :inherit nil))
                          (highlight           (:background clapoto-bg-1 :foreground clapoto-fg))
                          (homoglyph           (:foreground clapoto-intense_yellow))
@@ -195,7 +195,7 @@ DESCRIPTION, PALETTE and BODY share their usage with `autothemer'."
                          (telephone-line-evil-operator
                           (:background clapoto-neutral_magenta :inherit 'telephone-line-evil))
                          (telephone-line-evil-god
-                          (:background clapoto-neutral_teal :inherit 'telephone-line-evil)))
+                          (:background clapoto-neutral_aqua :inherit 'telephone-line-evil)))
 
                         ,@body))
 

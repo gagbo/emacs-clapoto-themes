@@ -42,7 +42,7 @@
   (clapoto-intense_orange  "#FF9E3B" nil)
   (clapoto-intense_yellow  "#DCA561" nil)
   (clapoto-intense_green   "#76946A" nil)
-  (clapoto-intense_teal    "#6A9589" nil)
+  (clapoto-intense_aqua    "#6A9589" nil)
   (clapoto-intense_blue    "#7E9CD8" nil)
   (clapoto-intense_purple  "#957FB8" nil)
   (clapoto-intense_magenta "#D27E99" nil)
@@ -52,7 +52,7 @@
   (clapoto-neutral_orange  "#FFA066" nil)
   (clapoto-neutral_yellow  "#E6C384" nil)
   (clapoto-neutral_green   "#98BB6C" nil)
-  (clapoto-neutral_teal    "#7AA89F" nil)
+  (clapoto-neutral_aqua    "#7AA89F" nil)
   (clapoto-neutral_blue    "#658594" nil)
   (clapoto-neutral_purple  "#957FB8" nil)
   (clapoto-neutral_magenta "#D27E99" nil)
@@ -62,7 +62,7 @@
   (clapoto-faded_orange  "#43242B" nil)
   (clapoto-faded_yellow  "#49443C" nil)
   (clapoto-faded_green   "#2B3328" nil)
-  (clapoto-faded_teal    "#223249" nil)
+  (clapoto-faded_aqua    "#223249" nil)
   (clapoto-faded_blue    "#223249" nil)
   (clapoto-faded_purple  "#252535" nil)
   (clapoto-faded_magenta "#352535" nil)
@@ -104,7 +104,7 @@
                                 ,clapoto-faded_yellow
                                 ,clapoto-faded_blue
                                 ,clapoto-faded_purple
-                                ,clapoto-faded_teal
+                                ,clapoto-faded_aqua
                                 ,clapoto-fg-1])
                              `(pdf-view-midnight-colors '(,clapoto-fg . ,clapoto-bg))))
 

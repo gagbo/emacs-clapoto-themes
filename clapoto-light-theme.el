@@ -1,4 +1,4 @@
-;;; clapoto-dark-theme.el --- Personal dark theme of gagbo -*- lexical-binding: t;no-byte-compile: t -*-
+;;; clapoto-light-theme.el --- Personal dark theme of gagbo -*- lexical-binding: t;no-byte-compile: t -*-
 
 ;; Author: Gerry Agbobada <git@gagbo.net>
 ;; URL: http://github.com/gagbo/emacs-clapoto-themes
@@ -16,56 +16,56 @@
 (require 'clapoto-themes)
 
 (clapoto-themes-deftheme
- clapoto-dark
- "A dark yellowish on blue-green theme."
+ clapoto-light
+ "A light sepia green-ish theme."
 
  ((((class color) (min-colors #xFFFFFF)) ; col 1 GUI/24bit
    ((class color) (min-colors #xFF)))    ; col 2 Xterm/256
 
-  (clapoto-fg+2 "#FFFFE0" nil)
-  (clapoto-fg+1 "#FEFEDF" nil)
-  (clapoto-fg   "#FCFCDD" nil)
-  (clapoto-fg-1 "#FCFBD2" nil)
-  (clapoto-fg-2 "#A3A39B" nil)
+  (clapoto-fg+2 "#000000" nil)
+  (clapoto-fg+1 "#010303" nil)
+  (clapoto-fg   "#050F0D" nil)
+  (clapoto-fg-1 "#0C201D" nil)
+  (clapoto-fg-2 "#18413B" nil)
 
-  (clapoto-bg+2 "#2D4F56" nil)
-  (clapoto-bg+1 "#1C261E" nil)
-  (clapoto-bg   "#101D1F" nil)
-  (clapoto-bg-1 "#0C120D" nil)
-  (clapoto-bg-2 "#000000" nil)
+  (clapoto-bg+2 "#F0F0DD" nil)
+  (clapoto-bg+1 "#F3F3E3" nil)
+  (clapoto-bg   "#F9F9F3" nil)
+  (clapoto-bg-1 "#FCFDFA" nil)
+  (clapoto-bg-2 "#FFFFFF" nil)
 
   (clapoto-white "#FFFFFF" nil)
   (clapoto-black "#000000" nil)
 
   ;; Test contrast against bg and faded variant
-  (clapoto-intense_red     "#E82222" nil)
-  (clapoto-intense_orange  "#F79E6A" nil)
-  (clapoto-intense_yellow  "#BEAC10" nil)
-  (clapoto-intense_green   "#CBFC4B" nil)
-  (clapoto-intense_aqua    "#A2F5FC" nil)
-  (clapoto-intense_blue    "#6E96F4" nil)
-  (clapoto-intense_purple  "#A869F2" nil)
-  (clapoto-intense_magenta "#FABADB" nil)
+  (clapoto-intense_red     "#351B21" nil)
+  (clapoto-intense_orange  "#381C07" nil)
+  (clapoto-intense_yellow  "#282300" nil)
+  (clapoto-intense_green   "#1E2612" nil)
+  (clapoto-intense_aqua    "#142627" nil)
+  (clapoto-intense_blue    "#09224B" nil)
+  (clapoto-intense_purple  "#350A59" nil)
+  (clapoto-intense_magenta "#470731" nil)
 
   ;; Test contrast against bg variant
-  (clapoto-neutral_red     "#E9B5BB" nil)
-  (clapoto-neutral_orange  "#EAB98A" nil)
-  (clapoto-neutral_yellow  "#CFC47A" nil)
-  (clapoto-neutral_green   "#AFCD7A" nil)
-  (clapoto-neutral_aqua    "#82CFD5" nil)
-  (clapoto-neutral_blue    "#B8C1E2" nil)
-  (clapoto-neutral_purple  "#DEB4E5" nil)
-  (clapoto-neutral_magenta "#E8B3CF" nil)
+  (clapoto-neutral_red     "#A31B16" nil)
+  (clapoto-neutral_orange  "#9F3B16" nil)
+  (clapoto-neutral_yellow  "#796F13" nil)
+  (clapoto-neutral_green   "#018513" nil)
+  (clapoto-neutral_aqua    "#6775CC" nil)
+  (clapoto-neutral_blue    "#0C1E8A" nil)
+  (clapoto-neutral_purple  "#CC659D" nil)
+  (clapoto-neutral_magenta "#970855" nil)
 
   ;; Test contrast against fg (and intense) variant
-  (clapoto-faded_red     "#351B21" nil)
-  (clapoto-faded_orange  "#381C07" nil)
-  (clapoto-faded_yellow  "#282300" nil)
-  (clapoto-faded_green   "#1E2612" nil)
-  (clapoto-faded_aqua    "#142627" nil)
-  (clapoto-faded_blue    "#09224B" nil)
-  (clapoto-faded_purple  "#350A59" nil)
-  (clapoto-faded_magenta "#470731" nil)
+  (clapoto-faded_red     "#E82222" nil)
+  (clapoto-faded_orange  "#F79E6A" nil)
+  (clapoto-faded_yellow  "#BEAC10" nil)
+  (clapoto-faded_green   "#CBFC4B" nil)
+  (clapoto-faded_aqua    "#A2F5FC" nil)
+  (clapoto-faded_blue    "#6E96F4" nil)
+  (clapoto-faded_purple  "#A869F2" nil)
+  (clapoto-faded_magenta "#FABADB" nil)
 
   ;; Test contrast against bg and faded variant
   (clapoto-intense_hue1 clapoto-intense_green)
@@ -88,15 +88,15 @@
   (clapoto-faded_hue4 clapoto-faded_blue)
   (clapoto-faded_hue5 clapoto-faded_orange)
 
-  (clapoto-comments clapoto-neutral_aqua)
+  (clapoto-comments clapoto-neutral_green)
 
   ;; Package specific colors
-  (clapoto-delimiter-one   "#458588" nil)
-  (clapoto-delimiter-two   "#b16286" nil)
-  (clapoto-delimiter-three "#8ec07c" nil)
-  (clapoto-delimiter-four  "#d65d0e" nil))
+  (clapoto-delimiter-one clapoto-neutral_aqua)
+  (clapoto-delimiter-two clapoto-neutral_magenta)
+  (clapoto-delimiter-three clapoto-neutral_blue)
+  (clapoto-delimiter-four clapoto-neutral_orange))
 
- (custom-theme-set-variables 'clapoto-dark
+ (custom-theme-set-variables 'clapoto-light
                              `(ansi-color-names-vector
                                [,clapoto-bg-1
                                 ,clapoto-faded_red
@@ -115,5 +115,5 @@
                   (file-name-as-directory
                    (file-name-directory load-file-name))))
 
-(provide-theme 'clapoto-dark)
-;;; clapoto-dark-theme.el ends here
+(provide-theme 'clapoto-light)
+;;; clapoto-light-theme.el ends here
