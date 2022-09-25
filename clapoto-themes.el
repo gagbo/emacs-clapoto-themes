@@ -120,7 +120,7 @@ DESCRIPTION, PALETTE and BODY share their usage with `autothemer'."
                          (font-lock-constant-face      (:foreground clapoto-neutral_hue1))
                          (font-lock-comment-face       (:foreground clapoto-comments))
                          (font-lock-function-name-face (:foreground clapoto-neutral_hue2))
-                         (font-lock-keyword-face       (:foreground clapoto-neutral_hue3))
+                         (font-lock-keyword-face       (:foreground clapoto-neutral_hue1))
                          (font-lock-string-face        (:foreground clapoto-neutral_green))
                          (font-lock-variable-name-face (:foreground clapoto-neutral_hue2))
                          (font-lock-type-face          (:foreground clapoto-neutral_hue3))

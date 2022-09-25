@@ -68,15 +68,15 @@
   (clapoto-faded_magenta "#470731" nil)
 
   ;; Test contrast against bg and faded variant
-  (clapoto-intense_hue1 clapoto-intense_green)
-  (clapoto-intense_hue2 clapoto-intense_yellow)
+  (clapoto-intense_hue1 clapoto-intense_yellow)
+  (clapoto-intense_hue2 clapoto-intense_green)
   (clapoto-intense_hue3 clapoto-intense_aqua)
   (clapoto-intense_hue4 clapoto-intense_blue)
   (clapoto-intense_hue5 clapoto-intense_orange)
 
   ;; Test contrast against bg variant
-  (clapoto-neutral_hue1 clapoto-neutral_green)
-  (clapoto-neutral_hue2 clapoto-neutral_yellow)
+  (clapoto-neutral_hue1 clapoto-neutral_yellow)
+  (clapoto-neutral_hue2 clapoto-neutral_green)
   (clapoto-neutral_hue3 clapoto-neutral_aqua)
   (clapoto-neutral_hue4 clapoto-neutral_blue)
   (clapoto-neutral_hue5 clapoto-neutral_orange)
