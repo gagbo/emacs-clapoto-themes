@@ -10,8 +10,11 @@ Maybe screenshots will come once I feel the themes are stable enough.
 - [color-tools.el](https://github.com/neeasade/ct.el)
 
 ## Dark theme inspiration
-- naysayer theme (Jon Blow's Emacs theme)
+The main inspiration is everforest, which is very close to be exactly what I
+wanted.
+
 - [everforest.nvim](https://github.com/sainnhe/everforest)
+- naysayer theme (Jon Blow's Emacs theme)
 - [Terafox](https://github.com/EdenEast/nightfox.nvim) (the nightfox.nvim variant)
 - [Sourcerer](https://github.com/Xero/sourcerer)
 - [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim)

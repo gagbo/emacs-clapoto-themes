@@ -28,12 +28,12 @@
   (clapoto-fg-1 "#EEDFCF" nil)
   (clapoto-fg-2 "#D5CEAE" nil)
 
-  (clapoto-bg+2   "#2D4328" nil)
-  (clapoto-bg+1   "#2f2921" nil)
-  (clapoto-bg     "#0C140A" nil)
-  (clapoto-bg-alt "#141F12" nil)
-  (clapoto-bg-1   "#030902" nil)
-  (clapoto-bg-2   "#000000" nil)
+  (clapoto-bg+2   "#242E26" nil)
+  (clapoto-bg+1   "#27292A" nil)
+  (clapoto-bg     "#252B2F" nil)
+  (clapoto-bg-alt "#323B41" nil)
+  (clapoto-bg-1   "#1D2123" nil)
+  (clapoto-bg-2   "#1F231E" nil)
 
   (clapoto-white "#FFFFFF" nil)
   (clapoto-black "#000000" nil)
@@ -53,18 +53,19 @@
   (clapoto-brown_int   "#F7AB42" nil)
 
   ;; Test contrast against bg variant
-  ;; OkHSV S=38 V=93
-  (clapoto-red     "#EA9D8F" nil)       ; H = 30
-  (clapoto-orange  "#EAB48A" nil)       ; H = 59
-  (clapoto-yellow  "#EAD48B" nil)       ; H = 93
-  (clapoto-green   "#D4EA92" nil)       ; H = 120
-  (clapoto-aqua    "#8FCBEA" nil)       ; H = 231
-  (clapoto-blue    "#8EADEA" nil)       ; H = 264
-  (clapoto-purple  "#E1A6EA" nil)       ; H = 322
-  (clapoto-magenta "#EA9AA9" nil)       ; H = 8
-  (clapoto-teal    "#9BEBB9" nil)       ; H = 160
-  (clapoto-leaf    "#A9EA9B" nil)       ; H = 140
-  (clapoto-brown   "#EABE8A" nil)       ; H = 71
+  ;; OkHSV S=38 V=75
+  (clapoto-red     "#BA7C71" nil)       ; H = 30
+  (clapoto-orange  "#BA8E6D" nil)       ; H = 59
+  (clapoto-yellow  "#B9A86D" nil)       ; H = 93
+  (clapoto-green   "#A8B972" nil)       ; H = 120
+  (clapoto-aqua    "#70A1BA" nil)       ; H = 231
+  (clapoto-blue    "#7089BB" nil)       ; H = 264
+  (clapoto-purple  "#B383BA" nil)       ; H = 322
+  (clapoto-magenta "#BA7A85" nil)       ; H = 8
+
+  (clapoto-teal    "#77B996" nil)       ; H = 160
+  (clapoto-leaf    "#85B97A" nil)       ; H = 140
+  (clapoto-brown   "#BA966C" nil)       ; H = 71
 
   ;; Test contrast against fg (and intense) variant
   ;; OkHSV S=80 V=20
@@ -82,23 +83,23 @@
 
   ;; Test contrast against bg and faded variant
   (clapoto-accent1_int clapoto-leaf_int)
-  (clapoto-accent2_int clapoto-green_int)
-  (clapoto-accent3_int clapoto-teal_int)
-  (clapoto-accent4_int clapoto-brown_int)
+  (clapoto-accent2_int clapoto-brown_int)
+  (clapoto-accent3_int clapoto-green_int)
+  (clapoto-accent4_int clapoto-yellow_int)
   (clapoto-accent5_int clapoto-aqua_int)
 
   ;; Test contrast against bg variant
   (clapoto-accent1 clapoto-leaf)
-  (clapoto-accent2 clapoto-green)
-  (clapoto-accent3 clapoto-teal)
-  (clapoto-accent4 clapoto-brown)
+  (clapoto-accent2 clapoto-brown)
+  (clapoto-accent3 clapoto-green)
+  (clapoto-accent4 clapoto-yellow)
   (clapoto-accent5 clapoto-aqua)
 
   ;; Test contrast against fg (and bright) variant
   (clapoto-accent1_bg clapoto-leaf_bg)
-  (clapoto-accent2_bg clapoto-green_bg)
-  (clapoto-accent3_bg clapoto-teal_bg)
-  (clapoto-accent4_bg clapoto-brown_bg)
+  (clapoto-accent2_bg clapoto-brown_bg)
+  (clapoto-accent3_bg clapoto-green_bg)
+  (clapoto-accent4_bg clapoto-yellow_bg)
   (clapoto-accent5_bg clapoto-aqua_bg)
 
   (clapoto-comments "#FCE8A9" nil)
