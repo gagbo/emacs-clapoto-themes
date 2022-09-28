@@ -24,12 +24,12 @@
 
   (clapoto-fg+2 "#000000" nil)
   (clapoto-fg+1 "#00251B" nil)
-  (clapoto-fg   "#02160E" nil)
-  (clapoto-fg-1 "#003C2B" nil)
-  (clapoto-fg-2 "#115640" nil)
+  (clapoto-fg   "#1B3C13" nil)
+  (clapoto-fg-1 "#2D4728" nil)
+  (clapoto-fg-2 "#795C39" nil)
 
-  (clapoto-bg+2 "#EEE5DE" nil)
-  (clapoto-bg+1 "#F2F4F0" nil)
+  (clapoto-bg+2 "#E4EEE2" nil)
+  (clapoto-bg+1 "#F4F2EF" nil)
   (clapoto-bg   "#FCFDFF" nil)
   (clapoto-bg-1 "#F9F6F4" nil)
   (clapoto-bg-2 "#FFFDFB" nil)
@@ -50,6 +50,7 @@
   (clapoto-purple_int  "#6A0078" nil)
   (clapoto-magenta_int "#790030" nil)
 
+  (clapoto-leaf_int   "#227400" nil)
   (clapoto-brown_int  "#754900" nil)
 
   ;; Test contrast against bg variant
@@ -75,6 +76,8 @@
   ;; H = 8
   (clapoto-magenta "#5B1429" nil)
 
+  ;; H = 140
+  (clapoto-leaf   "#215612" nil)
   ;; H = 71
   (clapoto-brown   "#58390D" nil)
 
@@ -91,30 +94,31 @@
   (clapoto-purple_bg  "#ECCCF1" nil)
   (clapoto-magenta_bg "#F1C3CA" nil)
 
+  (clapoto-leaf_bg   "#CCF1C4" nil)
   (clapoto-brown_bg   "#F1D6B7" nil)
 
   ;; Test contrast against bg and faded variant
   (clapoto-accent1_int clapoto-brown_int)
-  (clapoto-accent2_int clapoto-aqua_int)
-  (clapoto-accent3_int clapoto-green_int)
-  (clapoto-accent4_int clapoto-aqua-2_int)
+  (clapoto-accent2_int clapoto-green_int)
+  (clapoto-accent3_int clapoto-aqua_int)
+  (clapoto-accent4_int clapoto-green_int)
   (clapoto-accent5_int clapoto-blue_int)
 
   ;; Test contrast against bg variant
   (clapoto-accent1 clapoto-brown)
-  (clapoto-accent2 clapoto-aqua)
-  (clapoto-accent3 clapoto-green)
-  (clapoto-accent4 clapoto-aqua-2)
+  (clapoto-accent2 clapoto-green)
+  (clapoto-accent3 clapoto-aqua)
+  (clapoto-accent4 clapoto-green)
   (clapoto-accent5 clapoto-blue)
 
   ;; Test contrast against fg (and bright) variant
   (clapoto-accent1_bg clapoto-brown_bg)
-  (clapoto-accent2_bg clapoto-aqua_bg)
-  (clapoto-accent3_bg clapoto-green_bg)
-  (clapoto-accent4_bg clapoto-aqua-2_bg)
+  (clapoto-accent2_bg clapoto-green_bg)
+  (clapoto-accent3_bg clapoto-aqua_bg)
+  (clapoto-accent4_bg clapoto-green_bg)
   (clapoto-accent5_bg clapoto-blue_bg)
 
-  (clapoto-comments clapoto-fg-2)
+  (clapoto-comments "#212121")
 
   ;; Package specific colors
   (clapoto-delimiter-one clapoto-aqua)
