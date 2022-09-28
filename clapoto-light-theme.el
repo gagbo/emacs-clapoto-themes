@@ -26,13 +26,13 @@
   (clapoto-fg+1 "#00251B" nil)
   (clapoto-fg   "#003C2B" nil)
   (clapoto-fg-1 "#00563F" nil)
-  (clapoto-fg-2 "#357860" nil)
+  (clapoto-fg-2 "#4d9278" nil)
 
-  (clapoto-bg-2 "#E0E2E5" nil)
-  (clapoto-bg-1 "#EBEEF1" nil)
+  (clapoto-bg+2 "#E2E5EE" nil)
+  (clapoto-bg+1 "#E0E2E5" nil)
   (clapoto-bg   "#F5F6F9" nil)
-  (clapoto-bg+1 "#F4F6F9" nil)
-  (clapoto-bg+2 "#FCFDFF" nil)
+  (clapoto-bg-1 "#D5EBE1" nil)
+  (clapoto-bg-2 "#FCFFFE" nil)
 
   (clapoto-white "#FFFFFF" nil)
   (clapoto-black "#000000" nil)
