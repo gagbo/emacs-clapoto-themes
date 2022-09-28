@@ -17,84 +17,102 @@
 
 (clapoto-themes-deftheme
  clapoto-light
- "A light sepia green-ish theme."
+ "A light cold nature focused theme."
 
  ((((class color) (min-colors #xFFFFFF)) ; col 1 GUI/24bit
    ((class color) (min-colors #xFF)))    ; col 2 Xterm/256
 
   (clapoto-fg+2 "#000000" nil)
-  (clapoto-fg+1 "#010303" nil)
-  (clapoto-fg   "#050F0D" nil)
-  (clapoto-fg-1 "#0C201D" nil)
-  (clapoto-fg-2 "#18413B" nil)
+  (clapoto-fg+1 "#00251B" nil)
+  (clapoto-fg   "#003C2B" nil)
+  (clapoto-fg-1 "#00563F" nil)
+  (clapoto-fg-2 "#357860" nil)
 
-  (clapoto-bg+2 "#F0F0DD" nil)
-  (clapoto-bg+1 "#F3F3E3" nil)
-  (clapoto-bg   "#F9F9F3" nil)
-  (clapoto-bg-1 "#FCFDFA" nil)
-  (clapoto-bg-2 "#FFFFFF" nil)
+  (clapoto-bg-2 "#E0E2E5" nil)
+  (clapoto-bg-1 "#EBEEF1" nil)
+  (clapoto-bg   "#F5F6F9" nil)
+  (clapoto-bg+1 "#F4F6F9" nil)
+  (clapoto-bg+2 "#FCFDFF" nil)
 
   (clapoto-white "#FFFFFF" nil)
   (clapoto-black "#000000" nil)
 
   ;; Test contrast against bg and faded variant
-  (clapoto-red_int     "#790032" nil)
-  (clapoto-orange_int  "#5D2E00" nil)
-  (clapoto-yellow_int  "#413C00" nil)
-  (clapoto-green_int   "#2C4100" nil)
-  (clapoto-aqua_int    "#004245" nil)
-  (clapoto-blue_int    "#00387F" nil)
-  (clapoto-purple_int  "#590095" nil)
-  (clapoto-magenta_int "#740051" nil)
+  ;; OkHSV started with S=100 V=60
+  (clapoto-red_int     "#970800" nil)
+  (clapoto-orange_int  "#955000" nil)
+  (clapoto-yellow_int  "#927700" nil)
+  (clapoto-green_int   "#7B9200" nil)
+  (clapoto-aqua_int    "#006F95" nil)
+  (clapoto-blue_int    "#01219B" nil)
+  (clapoto-purple_int  "#850097" nil)
+  (clapoto-magenta_int "#97003E" nil)
+
+  (clapoto-brown_int  "#945E00" nil)
 
   ;; Test contrast against bg variant
-  (clapoto-red     "#A31B16" nil)
-  (clapoto-orange  "#9F3B16" nil)
-  (clapoto-yellow  "#796F13" nil)
-  (clapoto-green   "#018513" nil)
-  (clapoto-aqua    "#6775CC" nil)
-  (clapoto-blue    "#0C1E8A" nil)
-  (clapoto-purple  "#CC659D" nil)
-  (clapoto-magenta "#970855" nil)
+  ;; OkHSV S=100 V=36
+  ;; H = 30
+  (clapoto-red     "#5D0400" nil)
+  ;; H = 59
+  (clapoto-orange  "#5A2E00" nil)
+  ;; H = 93
+  (clapoto-yellow  "#564600" nil)
+  ;; H = 120
+  (clapoto-green   "#475500" nil)
+  ;; H = 231
+  (clapoto-aqua    "#004159" nil)
+  ;; H = 264
+  (clapoto-blue    "#001162" nil)
+  ;; H = 322
+  (clapoto-purple  "#50005C" nil)
+  ;; H = 8
+  (clapoto-magenta "#CF1259" nil)
+
+  ;; H = 71
+  (clapoto-brown   "#583700" nil)
 
   ;; Test contrast against fg (and intense) variant
-  (clapoto-red_bg     "#E82222" nil)
-  (clapoto-orange_bg  "#F79E6A" nil)
-  (clapoto-yellow_bg  "#BEAC10" nil)
-  (clapoto-green_bg   "#CBFC4B" nil)
-  (clapoto-aqua_bg    "#A2F5FC" nil)
-  (clapoto-blue_bg    "#6E96F4" nil)
-  (clapoto-purple_bg  "#A869F2" nil)
-  (clapoto-magenta_bg "#FABADB" nil)
+  ;; OkHSV S=20 V=95
+  (clapoto-red_bg     "#F1C4BC" nil)
+  (clapoto-orange_bg  "#F1D0B8" nil)
+  (clapoto-yellow_bg  "#F1E3B8" nil)
+  (clapoto-green_bg   "#E3F1BC" nil)
+  (clapoto-aqua_bg    "#BADEF1" nil)
+  (clapoto-blue_bg    "#BECFF1" nil)
+  (clapoto-purple_bg  "#ECCCF1" nil)
+  (clapoto-magenta_bg "#F1C3CA" nil)
+
+  (clapoto-brown_bg   "#F1D6B7" nil)
 
   ;; Test contrast against bg and faded variant
-  (clapoto-accent1_int clapoto-aqua_int)
-  (clapoto-accent2_int clapoto-blue_int)
-  (clapoto-accent3_int clapoto-purple_int)
-  (clapoto-accent4_int clapoto-magenta_int)
-  (clapoto-accent5_int clapoto-orange_int)
+  (clapoto-accent1_int clapoto-brown_int)
+  (clapoto-accent2_int clapoto-aqua_int)
+  (clapoto-accent3_int clapoto-blue_int)
+  (clapoto-accent4_int clapoto-aqua_int)
+  (clapoto-accent5_int clapoto-blue_int)
 
   ;; Test contrast against bg variant
-  (clapoto-accent1 clapoto-aqua)
-  (clapoto-accent2 clapoto-blue)
-  (clapoto-accent3 clapoto-purple)
-  (clapoto-accent4 clapoto-magenta)
-  (clapoto-accent5 clapoto-orange)
+  (clapoto-accent1 clapoto-brown)
+  (clapoto-accent2 clapoto-aqua)
+  (clapoto-accent3 clapoto-blue)
+  (clapoto-accent4 clapoto-aqua)
+  (clapoto-accent5 clapoto-blue)
 
   ;; Test contrast against fg (and bright) variant
-  (clapoto-accent1_bg clapoto-aqua_bg)
-  (clapoto-accent2_bg clapoto-blue_bg)
-  (clapoto-accent3_bg clapoto-purple_bg)
-  (clapoto-accent4_bg clapoto-magenta_bg)
-  (clapoto-accent5_bg clapoto-orange_bg)
+  (clapoto-accent1_bg clapoto-brown_bg)
+  (clapoto-accent2_bg clapoto-aqua_bg)
+  (clapoto-accent3_bg clapoto-blue_bg)
+  (clapoto-accent4_bg clapoto-aqua_bg)
+  (clapoto-accent5_bg clapoto-blue_bg)
 
-  (clapoto-comments clapoto-green)
+  (clapoto-comments clapoto-green_int)
 
   ;; Package specific colors
   (clapoto-delimiter-one clapoto-aqua)
   (clapoto-delimiter-two clapoto-magenta)
   (clapoto-delimiter-three clapoto-blue)
-  (clapoto-delimiter-four clapoto-orange))
+  (clapoto-delimiter-four clapoto-purple))
 
  (custom-theme-set-variables 'clapoto-light
                              `(ansi-color-names-vector
