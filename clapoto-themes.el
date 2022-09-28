@@ -19,6 +19,7 @@
 ;; - clapoto-bg-2 ; further from fg
 ;; - clapoto-bg-1
 ;; - clapoto-bg
+;; - clapoto-bg-alt
 ;; - clapoto-bg+1
 ;; - clapoto-bg+2 ; closer to fg
 
@@ -105,7 +106,7 @@ DESCRIPTION, PALETTE and BODY share their usage with `autothemer'."
                          (mode-line           (:background clapoto-bg+2 :foreground clapoto-fg-1 :box nil))
                          (mode-line-inactive  (:background clapoto-bg+1 :foreground clapoto-fg-2 :box nil))
                          (fringe              (:background clapoto-bg))
-                         (hl-line             (:background clapoto-bg-1))
+                         (hl-line             (:background clapoto-bg-alt))
                          (region              (:background clapoto-bg+2)) ;;selection
                          (secondary-selection (:background clapoto-bg+1))
                          (minibuffer-prompt   (:foreground clapoto-accent5_int :bold t))
@@ -135,7 +136,7 @@ DESCRIPTION, PALETTE and BODY share their usage with `autothemer'."
                          (trailing-whitespace (:background clapoto-red_int))
                          (escape-glyph        (:foreground clapoto-aqua_int))
                          (header-line         (:background clapoto-bg+1 :foreground clapoto-fg+1 :box nil :inherit nil))
-                         (highlight           (:background clapoto-bg-1 :foreground clapoto-fg))
+                         (highlight           (:background clapoto-bg-alt :foreground clapoto-fg+1))
                          (homoglyph           (:foreground clapoto-yellow_int))
                          (match               (:foreground clapoto-bg-1 :background clapoto-blue_int))
 
@@ -168,7 +169,7 @@ DESCRIPTION, PALETTE and BODY share their usage with `autothemer'."
 
                          ;; Magit
                          (magit-hash (:background clapoto-accent4_bg :foreground clapoto-accent4))
-                         (magit-section-highlight (:background clapoto-bg-1))
+                         (magit-section-highlight (:background clapoto-bg-alt))
 
                          ;; RainbowDelimiters
                          (rainbow-delimiters-depth-1-face   (:foreground clapoto-delimiter-one))

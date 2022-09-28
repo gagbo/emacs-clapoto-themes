@@ -28,11 +28,12 @@
   (clapoto-fg-1 "#C8C093" nil)
   (clapoto-fg-2 "#54546D" nil)
 
-  (clapoto-bg+2 "#363646" nil)
-  (clapoto-bg+1 "#2A2A37" nil)
-  (clapoto-bg   "#1F1F28" nil)
-  (clapoto-bg-1 "#16161D" nil)
-  (clapoto-bg-2 "#16161D" nil)
+  (clapoto-bg+2   "#363646" nil)
+  (clapoto-bg+1   "#2A2A37" nil)
+  (clapoto-bg     "#1F1F28" nil)
+  (clapoto-bg-alt "#363646" nil)
+  (clapoto-bg-1   "#16161D" nil)
+  (clapoto-bg-2   "#16161D" nil)
 
   (clapoto-white "#FFFFFF" nil)
   (clapoto-black "#000000" nil)

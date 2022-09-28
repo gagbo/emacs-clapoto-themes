@@ -22,17 +22,18 @@
  ((((class color) (min-colors #xFFFFFF)) ; col 1 GUI/24bit
    ((class color) (min-colors #xFF)))    ; col 2 Xterm/256
 
-  (clapoto-fg+2 "#000000" nil)
-  (clapoto-fg+1 "#00251B" nil)
-  (clapoto-fg   "#1B3C13" nil)
-  (clapoto-fg-1 "#2D4728" nil)
   (clapoto-fg-2 "#795C39" nil)
+  (clapoto-fg-1 "#2D4728" nil)
+  (clapoto-fg   "#1F3B18" nil)
+  (clapoto-fg+1 "#00251B" nil)
+  (clapoto-fg+2 "#000000" nil)
 
-  (clapoto-bg+2 "#E4EEE2" nil)
-  (clapoto-bg+1 "#F4F2EF" nil)
-  (clapoto-bg   "#FCFDFF" nil)
-  (clapoto-bg-1 "#F9F6F4" nil)
-  (clapoto-bg-2 "#FFFDFB" nil)
+  (clapoto-bg+2   "#E4EEE2" nil)
+  (clapoto-bg+1   "#F4F2EF" nil)
+  (clapoto-bg     "#FCFDFF" nil)
+  (clapoto-bg-alt "#F9F6F4" nil)
+  (clapoto-bg-1   "#FDFEFF" nil)
+  (clapoto-bg-2   "#FFFFFF" nil)
 
   (clapoto-white "#FFFFFF" nil)
   (clapoto-black "#000000" nil)
@@ -118,7 +119,7 @@
   (clapoto-accent4_bg clapoto-green_bg)
   (clapoto-accent5_bg clapoto-blue_bg)
 
-  (clapoto-comments "#212121")
+  (clapoto-comments "#111710" nil)
 
   ;; Package specific colors
   (clapoto-delimiter-one clapoto-aqua)
