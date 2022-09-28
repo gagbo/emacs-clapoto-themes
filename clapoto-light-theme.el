@@ -51,6 +51,7 @@
   (clapoto-purple_int  "#6A0078" nil)
   (clapoto-magenta_int "#790030" nil)
 
+  (clapoto-leaf-1_int   "#00744B" nil)
   (clapoto-leaf_int   "#227400" nil)
   (clapoto-brown_int  "#754900" nil)
 
@@ -77,6 +78,8 @@
   ;; H = 8
   (clapoto-magenta "#5B1429" nil)
 
+  ;; H = 160
+  (clapoto-leaf-1   "#125639" nil)
   ;; H = 140
   (clapoto-leaf   "#215612" nil)
   ;; H = 71
@@ -95,29 +98,30 @@
   (clapoto-purple_bg  "#ECCCF1" nil)
   (clapoto-magenta_bg "#F1C3CA" nil)
 
+  (clapoto-leaf-1_bg   "#C0F1D5" nil)
   (clapoto-leaf_bg   "#CCF1C4" nil)
   (clapoto-brown_bg   "#F1D6B7" nil)
 
   ;; Test contrast against bg and faded variant
-  (clapoto-accent1_int clapoto-brown_int)
+  (clapoto-accent1_int clapoto-leaf_int)
   (clapoto-accent2_int clapoto-green_int)
-  (clapoto-accent3_int clapoto-aqua_int)
-  (clapoto-accent4_int clapoto-green_int)
-  (clapoto-accent5_int clapoto-blue_int)
+  (clapoto-accent3_int clapoto-leaf-1_int)
+  (clapoto-accent4_int clapoto-aqua-2_int)
+  (clapoto-accent5_int clapoto-brown_int)
 
   ;; Test contrast against bg variant
-  (clapoto-accent1 clapoto-brown)
+  (clapoto-accent1 clapoto-leaf)
   (clapoto-accent2 clapoto-green)
-  (clapoto-accent3 clapoto-aqua)
-  (clapoto-accent4 clapoto-green)
-  (clapoto-accent5 clapoto-blue)
+  (clapoto-accent3 clapoto-leaf-1)
+  (clapoto-accent4 clapoto-aqua)
+  (clapoto-accent5 clapoto-brown)
 
   ;; Test contrast against fg (and bright) variant
-  (clapoto-accent1_bg clapoto-brown_bg)
+  (clapoto-accent1_bg clapoto-leaf_bg)
   (clapoto-accent2_bg clapoto-green_bg)
-  (clapoto-accent3_bg clapoto-aqua_bg)
-  (clapoto-accent4_bg clapoto-green_bg)
-  (clapoto-accent5_bg clapoto-blue_bg)
+  (clapoto-accent3_bg clapoto-leaf-1_bg)
+  (clapoto-accent4_bg clapoto-aqua_bg)
+  (clapoto-accent5_bg clapoto-brown_bg)
 
   (clapoto-comments "#111710" nil)
 
