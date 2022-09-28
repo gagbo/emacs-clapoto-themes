@@ -24,9 +24,9 @@
 
   (clapoto-fg+2 "#000000" nil)
   (clapoto-fg+1 "#00251B" nil)
-  (clapoto-fg   "#003C2B" nil)
-  (clapoto-fg-1 "#00563F" nil)
-  (clapoto-fg-2 "#4d9278" nil)
+  (clapoto-fg   "#02160E" nil)
+  (clapoto-fg-1 "#003C2B" nil)
+  (clapoto-fg-2 "#115640" nil)
 
   (clapoto-bg+2 "#EEE5DE" nil)
   (clapoto-bg+1 "#F2F4F0" nil)
@@ -38,45 +38,45 @@
   (clapoto-black "#000000" nil)
 
   ;; Test contrast against bg and faded variant
-  ;; OkHSV started with S=100 V=60
-  (clapoto-red_int     "#970800" nil)
-  (clapoto-orange_int  "#955000" nil)
-  (clapoto-yellow_int  "#927700" nil)
-  (clapoto-green_int   "#7B9200" nil)
-  (clapoto-aqua-2_int  "#009280" nil)
-  (clapoto-aqua-1_int  "#008293" nil)
-  (clapoto-aqua_int    "#006F95" nil)
-  (clapoto-blue_int    "#01219B" nil)
-  (clapoto-purple_int  "#850097" nil)
-  (clapoto-magenta_int "#97003E" nil)
+  ;; OkHSV started with S=100 V=48
+  (clapoto-red_int     "#790500" nil)
+  (clapoto-orange_int  "#763E00" nil)
+  (clapoto-yellow_int  "#735D00" nil)
+  (clapoto-green_int   "#607200" nil)
+  (clapoto-aqua-2_int  "#007364" nil)
+  (clapoto-aqua-1_int  "#006B73" nil)
+  (clapoto-aqua_int    "#005776" nil)
+  (clapoto-blue_int    "#00197E" nil)
+  (clapoto-purple_int  "#6A0078" nil)
+  (clapoto-magenta_int "#790030" nil)
 
-  (clapoto-brown_int  "#945E00" nil)
+  (clapoto-brown_int  "#754900" nil)
 
   ;; Test contrast against bg variant
-  ;; OkHSV S=100 V=36
+  ;; OkHSV S=85 V=36
   ;; H = 30
-  (clapoto-red     "#5D0400" nil)
+  (clapoto-red     "#5C160E" nil)
   ;; H = 59
-  (clapoto-orange  "#5A2E00" nil)
+  (clapoto-orange  "#59320D" nil)
   ;; H = 93
-  (clapoto-yellow  "#564600" nil)
+  (clapoto-yellow  "#56470E" nil)
   ;; H = 120
-  (clapoto-green   "#475500" nil)
+  (clapoto-green   "#48550F" nil)
   ;; H = 180
-  (clapoto-aqua-2  "#00564B" nil)
-  ;; H = 211
-  (clapoto-aqua-1  "#004D57" nil)
+  (clapoto-aqua-2  "#10564B" nil)
+  ;; H = 204
+  (clapoto-aqua-1  "#0F5157" nil)
   ;; H = 231
-  (clapoto-aqua    "#004159" nil)
+  (clapoto-aqua    "#0F4359" nil)
   ;; H = 264
-  (clapoto-blue    "#001162" nil)
+  (clapoto-blue    "#09215F" nil)
   ;; H = 322
-  (clapoto-purple  "#50005C" nil)
+  (clapoto-purple  "#52175B" nil)
   ;; H = 8
-  (clapoto-magenta "#CF1259" nil)
+  (clapoto-magenta "#5B1429" nil)
 
   ;; H = 71
-  (clapoto-brown   "#583700" nil)
+  (clapoto-brown   "#58390D" nil)
 
   ;; Test contrast against fg (and intense) variant
   ;; OkHSV S=20 V=95
@@ -85,7 +85,7 @@
   (clapoto-yellow_bg  "#F1E3B8" nil)
   (clapoto-green_bg   "#E3F1BC" nil)
   (clapoto-aqua-2_bg  "#BBF1E5" nil)
-  (clapoto-aqua-1_bg  "#B9E8F1" nil)
+  (clapoto-aqua-1_bg  "#B9ECF1" nil)
   (clapoto-aqua_bg    "#BADEF1" nil)
   (clapoto-blue_bg    "#BECFF1" nil)
   (clapoto-purple_bg  "#ECCCF1" nil)
@@ -96,31 +96,31 @@
   ;; Test contrast against bg and faded variant
   (clapoto-accent1_int clapoto-brown_int)
   (clapoto-accent2_int clapoto-aqua_int)
-  (clapoto-accent3_int clapoto-aqua-1_int)
+  (clapoto-accent3_int clapoto-green_int)
   (clapoto-accent4_int clapoto-aqua-2_int)
   (clapoto-accent5_int clapoto-blue_int)
 
   ;; Test contrast against bg variant
   (clapoto-accent1 clapoto-brown)
   (clapoto-accent2 clapoto-aqua)
-  (clapoto-accent3 clapoto-aqua-1)
+  (clapoto-accent3 clapoto-green)
   (clapoto-accent4 clapoto-aqua-2)
   (clapoto-accent5 clapoto-blue)
 
   ;; Test contrast against fg (and bright) variant
   (clapoto-accent1_bg clapoto-brown_bg)
   (clapoto-accent2_bg clapoto-aqua_bg)
-  (clapoto-accent3_bg clapoto-aqua-1_bg)
+  (clapoto-accent3_bg clapoto-green_bg)
   (clapoto-accent4_bg clapoto-aqua-2_bg)
   (clapoto-accent5_bg clapoto-blue_bg)
 
-  (clapoto-comments clapoto-green_int)
+  (clapoto-comments clapoto-fg-2)
 
   ;; Package specific colors
   (clapoto-delimiter-one clapoto-aqua)
   (clapoto-delimiter-two clapoto-magenta)
-  (clapoto-delimiter-three clapoto-blue)
-  (clapoto-delimiter-four clapoto-purple))
+  (clapoto-delimiter-three clapoto-yellow)
+  (clapoto-delimiter-four clapoto-blue))
 
  (custom-theme-set-variables 'clapoto-light
                              `(ansi-color-names-vector
