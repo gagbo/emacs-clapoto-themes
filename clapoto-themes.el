@@ -165,6 +165,10 @@ DESCRIPTION, PALETTE and BODY share their usage with `autothemer'."
                          (whitespace-empty            (:background nil :foreground nil))
                          (whitespace-space-after-tab  (:background clapoto-bg :foreground clapoto-bg+1))
 
+                         ;; Magit
+                         (magit-hash (:background clapoto-accent4_bg :foreground clapoto-accent4))
+                         (magit-section-highlight (:background clapoto-bg-1))
+
                          ;; RainbowDelimiters
                          (rainbow-delimiters-depth-1-face   (:foreground clapoto-delimiter-one))
                          (rainbow-delimiters-depth-2-face   (:foreground clapoto-delimiter-two))

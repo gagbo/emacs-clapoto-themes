@@ -28,11 +28,11 @@
   (clapoto-fg-1 "#00563F" nil)
   (clapoto-fg-2 "#4d9278" nil)
 
-  (clapoto-bg+2 "#E2E5EE" nil)
-  (clapoto-bg+1 "#E0E2E5" nil)
-  (clapoto-bg   "#F5F6F9" nil)
-  (clapoto-bg-1 "#D5EBE1" nil)
-  (clapoto-bg-2 "#FCFFFE" nil)
+  (clapoto-bg+2 "#EEE5DE" nil)
+  (clapoto-bg+1 "#F2F4F0" nil)
+  (clapoto-bg   "#FCFDFF" nil)
+  (clapoto-bg-1 "#F9F6F4" nil)
+  (clapoto-bg-2 "#FFFDFB" nil)
 
   (clapoto-white "#FFFFFF" nil)
   (clapoto-black "#000000" nil)
@@ -43,6 +43,8 @@
   (clapoto-orange_int  "#955000" nil)
   (clapoto-yellow_int  "#927700" nil)
   (clapoto-green_int   "#7B9200" nil)
+  (clapoto-aqua-2_int  "#009280" nil)
+  (clapoto-aqua-1_int  "#008293" nil)
   (clapoto-aqua_int    "#006F95" nil)
   (clapoto-blue_int    "#01219B" nil)
   (clapoto-purple_int  "#850097" nil)
@@ -60,6 +62,10 @@
   (clapoto-yellow  "#564600" nil)
   ;; H = 120
   (clapoto-green   "#475500" nil)
+  ;; H = 180
+  (clapoto-aqua-2  "#00564B" nil)
+  ;; H = 211
+  (clapoto-aqua-1  "#004D57" nil)
   ;; H = 231
   (clapoto-aqua    "#004159" nil)
   ;; H = 264
@@ -78,6 +84,8 @@
   (clapoto-orange_bg  "#F1D0B8" nil)
   (clapoto-yellow_bg  "#F1E3B8" nil)
   (clapoto-green_bg   "#E3F1BC" nil)
+  (clapoto-aqua-2_bg  "#BBF1E5" nil)
+  (clapoto-aqua-1_bg  "#B9E8F1" nil)
   (clapoto-aqua_bg    "#BADEF1" nil)
   (clapoto-blue_bg    "#BECFF1" nil)
   (clapoto-purple_bg  "#ECCCF1" nil)
@@ -88,22 +96,22 @@
   ;; Test contrast against bg and faded variant
   (clapoto-accent1_int clapoto-brown_int)
   (clapoto-accent2_int clapoto-aqua_int)
-  (clapoto-accent3_int clapoto-blue_int)
-  (clapoto-accent4_int clapoto-aqua_int)
+  (clapoto-accent3_int clapoto-aqua-1_int)
+  (clapoto-accent4_int clapoto-aqua-2_int)
   (clapoto-accent5_int clapoto-blue_int)
 
   ;; Test contrast against bg variant
   (clapoto-accent1 clapoto-brown)
   (clapoto-accent2 clapoto-aqua)
-  (clapoto-accent3 clapoto-blue)
-  (clapoto-accent4 clapoto-aqua)
+  (clapoto-accent3 clapoto-aqua-1)
+  (clapoto-accent4 clapoto-aqua-2)
   (clapoto-accent5 clapoto-blue)
 
   ;; Test contrast against fg (and bright) variant
   (clapoto-accent1_bg clapoto-brown_bg)
   (clapoto-accent2_bg clapoto-aqua_bg)
-  (clapoto-accent3_bg clapoto-blue_bg)
-  (clapoto-accent4_bg clapoto-aqua_bg)
+  (clapoto-accent3_bg clapoto-aqua-1_bg)
+  (clapoto-accent4_bg clapoto-aqua-2_bg)
   (clapoto-accent5_bg clapoto-blue_bg)
 
   (clapoto-comments clapoto-green_int)
