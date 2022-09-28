@@ -85,21 +85,21 @@
   (clapoto-accent2_int clapoto-green_int)
   (clapoto-accent3_int clapoto-teal_int)
   (clapoto-accent4_int clapoto-brown_int)
-  (clapoto-accent5_int clapoto-blue_int)
+  (clapoto-accent5_int clapoto-aqua_int)
 
   ;; Test contrast against bg variant
   (clapoto-accent1 clapoto-leaf)
   (clapoto-accent2 clapoto-green)
   (clapoto-accent3 clapoto-teal)
   (clapoto-accent4 clapoto-brown)
-  (clapoto-accent5 clapoto-blue)
+  (clapoto-accent5 clapoto-aqua)
 
   ;; Test contrast against fg (and bright) variant
   (clapoto-accent1_bg clapoto-leaf_bg)
   (clapoto-accent2_bg clapoto-green_bg)
   (clapoto-accent3_bg clapoto-teal_bg)
   (clapoto-accent4_bg clapoto-brown_bg)
-  (clapoto-accent5_bg clapoto-blue_bg)
+  (clapoto-accent5_bg clapoto-aqua_bg)
 
   (clapoto-comments "#FCE8A9" nil)
 
