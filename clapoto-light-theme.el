@@ -24,8 +24,8 @@
 
   (clapoto-fg-2 "#795C39" nil)
   (clapoto-fg-1 "#2D4728" nil)
-  (clapoto-fg   "#1F3B18" nil)
-  (clapoto-fg+1 "#00251B" nil)
+  (clapoto-fg   "#0E4100" nil)
+  (clapoto-fg+1 "#042200" nil)
   (clapoto-fg+2 "#000000" nil)
 
   (clapoto-bg+2   "#E4EEE2" nil)
@@ -39,51 +39,41 @@
   (clapoto-black "#000000" nil)
 
   ;; Test contrast against bg and faded variant
-  ;; OkHSV started with S=100 V=48
-  (clapoto-red_int     "#790500" nil)
-  (clapoto-orange_int  "#763E00" nil)
-  (clapoto-yellow_int  "#735D00" nil)
-  (clapoto-green_int   "#607200" nil)
-  (clapoto-aqua-2_int  "#007364" nil)
-  (clapoto-aqua-1_int  "#006B73" nil)
-  (clapoto-aqua_int    "#005776" nil)
-  (clapoto-blue_int    "#00197E" nil)
-  (clapoto-purple_int  "#6A0078" nil)
-  (clapoto-magenta_int "#790030" nil)
+  ;; OkHSV started with S=100 V=50
+  (clapoto-red_int     "#7F0500" nil)
+  (clapoto-orange_int  "#7C4200" nil)
+  (clapoto-yellow_int  "#796200" nil)
+  (clapoto-green_int   "#657800" nil)
+  (clapoto-aqua-2_int  "#007969" nil)
+  (clapoto-aqua-1_int  "#007179" nil)
+  (clapoto-aqua_int    "#005B7B" nil)
+  (clapoto-blue_int    "#001B83" nil)
+  (clapoto-purple_int  "#6F007E" nil)
+  (clapoto-magenta_int "#7F0033" nil)
 
-  (clapoto-leaf-1_int   "#00744B" nil)
-  (clapoto-leaf_int   "#227400" nil)
+  (clapoto-leaf-1_int   "#00794E" nil)
+  (clapoto-leaf_int   "#227900" nil)
   (clapoto-brown_int  "#754900" nil)
 
   ;; Test contrast against bg variant
-  ;; OkHSV S=85 V=36
-  ;; H = 30
-  (clapoto-red     "#5C160E" nil)
-  ;; H = 59
-  (clapoto-orange  "#59320D" nil)
-  ;; H = 93
-  (clapoto-yellow  "#56470E" nil)
-  ;; H = 120
-  (clapoto-green   "#48550F" nil)
-  ;; H = 180
-  (clapoto-aqua-2  "#10564B" nil)
-  ;; H = 204
-  (clapoto-aqua-1  "#0F5157" nil)
-  ;; H = 231
-  (clapoto-aqua    "#0F4359" nil)
-  ;; H = 264
-  (clapoto-blue    "#09215F" nil)
-  ;; H = 322
-  (clapoto-purple  "#52175B" nil)
-  ;; H = 8
-  (clapoto-magenta "#5B1429" nil)
+  ;; OkHSV S=90 V=40
+  (clapoto-red     "#66140B" nil)       ; H = 30
+  (clapoto-orange  "#63360B" nil)       ; H = 59
+  (clapoto-yellow  "#604F0B" nil)       ; H = 93
+  (clapoto-green   "#505F0D" nil)       ; H = 120
+  (clapoto-aqua-2  "#0D6054" nil)       ; H = 180
+  (clapoto-aqua-1  "#0C5A60" nil)       ; H = 204
+  (clapoto-aqua    "#0C4A63" nil)       ; H = 231
+  (clapoto-blue    "#06206A" nil)       ; H = 264
+  (clapoto-purple  "#5A1465" nil)       ; H = 322
+  (clapoto-magenta "#65112C" nil)       ; H = 8
 
   ;; H = 160
-  (clapoto-leaf-1   "#125639" nil)
+  (clapoto-leaf-1   "#0F603F" nil)
   ;; H = 140
-  (clapoto-leaf   "#215612" nil)
+  (clapoto-leaf   "#21600F" nil)
   ;; H = 71
-  (clapoto-brown   "#58390D" nil)
+  (clapoto-brown   "#623F0B" nil)
 
   ;; Test contrast against fg (and intense) variant
   ;; OkHSV S=20 V=95
@@ -123,13 +113,13 @@
   (clapoto-accent4_bg clapoto-aqua_bg)
   (clapoto-accent5_bg clapoto-brown_bg)
 
-  (clapoto-comments "#111710" nil)
+  (clapoto-comments clapoto-brown_int)
 
   ;; Package specific colors
   (clapoto-delimiter-one clapoto-aqua)
-  (clapoto-delimiter-two clapoto-magenta)
-  (clapoto-delimiter-three clapoto-yellow)
-  (clapoto-delimiter-four clapoto-blue))
+  (clapoto-delimiter-two clapoto-brown)
+  (clapoto-delimiter-three clapoto-leaf)
+  (clapoto-delimiter-four clapoto-green))
 
  (custom-theme-set-variables 'clapoto-light
                              `(ansi-color-names-vector
