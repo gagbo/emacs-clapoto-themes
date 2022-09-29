@@ -103,7 +103,7 @@ DESCRIPTION, PALETTE and BODY share their usage with `autothemer'."
 
                         ((default             (:background clapoto-bg :foreground clapoto-fg))
                          (cursor              (:background clapoto-fg-1))
-                         (mode-line           (:background clapoto-bg+2 :foreground clapoto-fg-1 :box nil))
+                         (mode-line           (:background clapoto-bg+2 :foreground clapoto-fg+1 :box nil))
                          (mode-line-inactive  (:background clapoto-bg+1 :foreground clapoto-fg-2 :box nil))
                          (fringe              (:background clapoto-bg))
                          (hl-line             (:background clapoto-bg-alt))
@@ -140,6 +140,8 @@ DESCRIPTION, PALETTE and BODY share their usage with `autothemer'."
                          (homoglyph           (:foreground clapoto-yellow_int))
                          (match               (:foreground clapoto-bg-1 :background clapoto-blue_int))
 
+                         (line-number-current-line (:inherit 'line-number :foreground clapoto-accent4))
+
                          ;; Customize faces
                          (widget-field        (:background clapoto-bg+1))
                          (custom-group-tag    (:foreground clapoto-blue_int :weight 'bold))
@@ -167,9 +169,35 @@ DESCRIPTION, PALETTE and BODY share their usage with `autothemer'."
                          (whitespace-empty            (:background nil :foreground nil))
                          (whitespace-space-after-tab  (:background clapoto-bg :foreground clapoto-bg+1))
 
+                         ;; HL TODO
+                         (hl-todo (:weight 'bold :foreground clapoto-accent5))
+
+                         ;; Flycheck
+                         (flycheck-error (:underline (:style 'wave :color clapoto-red_int)))
+                         (flycheck-info (:underline (:style 'wave :color clapoto-aqua_int)))
+                         (flycheck-warning (:underline (:style 'wave :color clapoto-orange_int)))
+
+                         ;; Flyspell
+                         (flyspell-incorrect (:underline (:style 'wave :color clapoto-red_int)))
+                         (flyspell-duplicate (:underline (:style 'wave :color clapoto-orange_int)))
+
                          ;; Magit
                          (magit-hash (:background clapoto-accent4_bg :foreground clapoto-accent4))
                          (magit-section-highlight (:background clapoto-bg-alt))
+
+                         ;; Outline
+                         (outline-1 (:foreground clapoto-accent1_int))
+                         (outline-2 (:foreground clapoto-accent2_int))
+                         (outline-3 (:foreground clapoto-accent3_int))
+                         (outline-4 (:foreground clapoto-accent4_int))
+                         (outline-5 (:foreground clapoto-accent1))
+                         (outline-6 (:foreground clapoto-accent2))
+                         (outline-7 (:foreground clapoto-accent3))
+                         (outline-8 (:foreground clapoto-accent4))
+
+                         ;; Org
+                         (org-todo (:weight 'bold :foreground clapoto-accent5))
+                         (org-block (:extend t :background clapoto-bg+1 :foreground clapoto-fg-1))
 
                          ;; RainbowDelimiters
                          (rainbow-delimiters-depth-1-face   (:foreground clapoto-delimiter-one))

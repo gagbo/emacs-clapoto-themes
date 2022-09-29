@@ -28,10 +28,10 @@
   (clapoto-fg-1 "#0E4100" nil)
   (clapoto-fg-2 "#261704" nil)
 
-  (clapoto-bg+2   "#D8E5D5" nil)
+  (clapoto-bg+2   "#E3EBE1" nil)
   (clapoto-bg+1   "#F4F2EF" nil)
   (clapoto-bg     "#FFF9F2" nil)
-  (clapoto-bg-alt "#EBDFD2" nil)
+  (clapoto-bg-alt "#F1E6DA" nil)
   (clapoto-bg-1   "#FFFDFA" nil)
   (clapoto-bg-2   "#F5FFF2" nil)
 
