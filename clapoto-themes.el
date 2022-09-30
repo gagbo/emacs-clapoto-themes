@@ -158,16 +158,16 @@ DESCRIPTION, PALETTE and BODY share their usage with `autothemer'."
                          (which-key-special-key-face                (:weight 'bold :inverse-video t :inherit 'which-key-key-face))
 
                          ;; whitespace-mode
-                         (whitespace-space            (:background clapoto-bg :foreground clapoto-bg+1))
-                         (whitespace-hspace           (:background clapoto-bg :foreground clapoto-bg+1))
-                         (whitespace-tab              (:background clapoto-bg :foreground clapoto-bg+1))
-                         (whitespace-newline          (:background clapoto-bg :foreground clapoto-bg+1))
+                         (whitespace-space            (:background clapoto-bg :foreground clapoto-fg-2))
+                         (whitespace-hspace           (:background clapoto-bg :foreground clapoto-fg-2))
+                         (whitespace-tab              (:background clapoto-bg :foreground clapoto-fg-2))
+                         (whitespace-newline          (:background clapoto-bg :foreground clapoto-fg-2))
                          (whitespace-trailing         (:background clapoto-bg-1 :foreground clapoto-red_int))
                          (whitespace-line             (:background clapoto-bg-1 :foreground clapoto-red_int))
-                         (whitespace-space-before-tab (:background clapoto-bg :foreground clapoto-bg+1))
-                         (whitespace-indentation      (:background clapoto-bg :foreground clapoto-bg+1))
+                         (whitespace-space-before-tab (:background clapoto-bg :foreground clapoto-fg-2))
+                         (whitespace-indentation      (:background clapoto-bg :foreground clapoto-fg-2))
                          (whitespace-empty            (:background nil :foreground nil))
-                         (whitespace-space-after-tab  (:background clapoto-bg :foreground clapoto-bg+1))
+                         (whitespace-space-after-tab  (:background clapoto-bg :foreground clapoto-fg-2))
 
                          ;; HL TODO
                          (hl-todo (:weight 'bold :foreground clapoto-accent5))

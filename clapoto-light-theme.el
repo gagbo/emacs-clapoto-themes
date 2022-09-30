@@ -26,7 +26,7 @@
   (clapoto-fg+1 "#062400" nil)
   (clapoto-fg   "#0B2405" nil)
   (clapoto-fg-1 "#0E4100" nil)
-  (clapoto-fg-2 "#261704" nil)
+  (clapoto-fg-2 "#5F5446" nil)
 
   (clapoto-bg+2   "#E3EBE1" nil)
   (clapoto-bg+1   "#F4F2EF" nil)
