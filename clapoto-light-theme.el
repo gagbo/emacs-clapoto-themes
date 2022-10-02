@@ -17,7 +17,7 @@
 
   (defconst clapoto-light-palette
     '(;; Basic tones
-      (bg-main     "#f3fff5")
+      (bg-main     "#f7fff9")
       (fg-main     "#242f21")
       (bg-dim      "#e6f6e8")
       (fg-dim      "#6e8e67")
