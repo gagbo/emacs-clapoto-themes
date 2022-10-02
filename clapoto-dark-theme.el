@@ -17,7 +17,7 @@
 
   (defconst clapoto-dark-palette
     '(;; Basic tones
-      (bg-main      "#111111")
+      (bg-main      "#111517")
       (fg-main      "#cfdfd5")
       (bg-dim       "#222522")
       (fg-dim       "#808f80")
