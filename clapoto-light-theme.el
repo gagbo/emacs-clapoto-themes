@@ -4,138 +4,168 @@
 ;; URL: http://github.com/gagbo/emacs-clapoto-themes
 
 ;; Version: 0.0.1
-;; Package-Requires: ((emacs "27.1") (autothemer "0.2"))
+;; Package-Requires: ((emacs "27.1") (ef-themes "0.6"))
 
 ;;; Commentary:
 ;; A personal collection of hand-grown themes
 
 ;;; Code:
+(eval-and-compile
+  (require 'ef-themes)
 
-(require 'autothemer)
+  (deftheme clapoto-light "Personal light theme forked from ef-day.")
 
-(require 'clapoto-themes)
+  (defconst clapoto-light-palette
+    '(;; Basic tones
+      (bg-main     "#fff5ea")
+      (fg-main     "#584141")
+      (bg-dim      "#f3ebdc")
+      (fg-dim      "#63728f")
+      (bg-alt      "#e9e0d8")
+      (fg-alt      "#8f5f4a")
 
-(clapoto-themes-deftheme
- clapoto-light
- "A light warm nature focused theme."
+      (bg-active   "#d9d0c8")
+      (bg-inactive "#f9f1e8")
 
- ((((class color) (min-colors #xFFFFFF)) ; col 1 GUI/24bit
-   ((class color) (min-colors #xFF)))    ; col 2 Xterm/256
+      ;; Basic hues for foreground values
+      (red             "#ba2d2f")
+      (red-warmer      "#ce3f00")
+      (red-cooler      "#cf2f4f")
+      (red-faint       "#b05350")
+      (green           "#007a0a")
+      (green-warmer    "#5a7400")
+      (green-cooler    "#0f7f5f")
+      (green-faint     "#61756c")
+      (yellow          "#a45a22")
+      (yellow-warmer   "#b75515")
+      (yellow-cooler   "#aa4f30")
+      (yellow-faint    "#9a625a")
+      (blue            "#375cc6")
+      (blue-warmer     "#5f5fdf")
+      (blue-cooler     "#265fbf")
+      (blue-faint      "#4a659f")
+      (magenta         "#ca3e54")
+      (magenta-warmer  "#cb2f80")
+      (magenta-cooler  "#8448aa")
+      (magenta-faint   "#a04450")
+      (cyan            "#3f60af")
+      (cyan-warmer     "#3f6faf")
+      (cyan-cooler     "#0f7b8f")
+      (cyan-faint      "#4f6f8f")
 
-  (clapoto-fg+2 "#000000" nil)
-  (clapoto-fg+1 "#062400" nil)
-  (clapoto-fg   "#0B2405" nil)
-  (clapoto-fg-1 "#0E4100" nil)
-  (clapoto-fg-2 "#5F5446" nil)
+      ;; Basic hues for background values
+      (bg-red      "#ff8f88")
+      (bg-green    "#96df80")
+      (bg-yellow   "#efbf00")
+      (bg-blue     "#cfceff")
+      (bg-magenta  "#df9fff")
+      (bg-cyan     "#88cfd0")
 
-  (clapoto-bg+2   "#E3EBE1" nil)
-  (clapoto-bg+1   "#F4F2EF" nil)
-  (clapoto-bg     "#FFF9F2" nil)
-  (clapoto-bg-alt "#F1E6DA" nil)
-  (clapoto-bg-1   "#FFFDFA" nil)
-  (clapoto-bg-2   "#F5FFF2" nil)
+      (bg-red-subtle      "#ffc6bf")
+      (bg-green-subtle    "#c4f2af")
+      (bg-yellow-subtle   "#f0f07f")
+      (bg-blue-subtle     "#ccdfff")
+      (bg-magenta-subtle  "#fad3ff")
+      (bg-cyan-subtle     "#bfefff")
 
-  (clapoto-white "#FFFFFF" nil)
-  (clapoto-black "#000000" nil)
+      ;; Diffs
+      (bg-added          "#ccefcf")
+      (bg-added-faint    "#e0f3e0")
+      (bg-added-refine   "#bae0c0")
 
-  ;; Test contrast against bg and faded variant
-  ;; OkHSV started with S=100 V=50
-  (clapoto-red_int     "#7F0500" nil)
-  (clapoto-orange_int  "#7C4200" nil)
-  (clapoto-yellow_int  "#796200" nil)
-  (clapoto-green_int   "#657800" nil)
-  (clapoto-aqua-2_int  "#007969" nil)
-  (clapoto-aqua-1_int  "#007179" nil)
-  (clapoto-aqua_int    "#005B7B" nil)
-  (clapoto-blue_int    "#001B83" nil)
-  (clapoto-purple_int  "#6F007E" nil)
-  (clapoto-magenta_int "#7F0033" nil)
+      (bg-changed        "#ffe5b9")
+      (bg-changed-faint  "#ffefc5")
+      (bg-changed-refine "#ffd09f")
 
-  (clapoto-leaf-1_int "#00794E" nil)
-  (clapoto-leaf_int   "#227900" nil)
-  (clapoto-brown_int  "#754900" nil)
+      (bg-removed        "#ffd4d8")
+      (bg-removed-faint  "#ffe3e3")
+      (bg-removed-refine "#ffc0ca")
 
-  ;; Test contrast against bg variant
-  ;; OkHSV S=80 V=50
-  (clapoto-red     "#7D281D" nil)       ; H = 30
-  (clapoto-orange  "#7B491C" nil)       ; H = 59
-  (clapoto-yellow  "#79651D" nil)       ; H = 93
-  (clapoto-green   "#677820" nil)       ; H = 120
-  (clapoto-aqua-2  "#20786B" nil)       ; H = 180
-  (clapoto-aqua-1  "#1F7179" nil)       ; H = 204
-  (clapoto-aqua    "#1E5F7B" nil)       ; H = 231
-  (clapoto-blue    "#163580" nil)       ; H = 264
-  (clapoto-purple  "#712A7C" nil)       ; H = 322
-  (clapoto-magenta "#7D253D" nil)       ; H = 8
+      ;; Graphs
+      (red-graph-0-bg     "#ef7969")
+      (red-graph-1-bg     "#ffaab4")
+      (green-graph-0-bg   "#4faa09")
+      (green-graph-1-bg   "#8fef00")
+      (yellow-graph-0-bg  "#ffcf00")
+      (yellow-graph-1-bg  "#f9ff00")
+      (blue-graph-0-bg    "#7090ff")
+      (blue-graph-1-bg    "#9fc6ff")
+      (magenta-graph-0-bg "#e07fff")
+      (magenta-graph-1-bg "#fad0ff")
+      (cyan-graph-0-bg    "#70d3f0")
+      (cyan-graph-1-bg    "#afefff")
 
-  (clapoto-leaf-1 "#237953" nil)        ; H = 160
-  (clapoto-leaf   "#347923" nil)        ; H = 140
-  (clapoto-brown  "#7A521C" nil)        ; H = 71
+      ;; Special hues
+      (bg-mode-line  "#ffaf72") (fg-mode-line  "#542f38")
+      (bg-accent     "#106246") (fg-accent     "#ffffff")
+      (bg-completion "#ffd5d3")
+      (bg-hover      "#b0e0df")
+      (bg-hover-alt  "#febcaf")
+      (bg-hl-line    "#f9e2b2")
+      (bg-region     "#f0d2df")
+      (bg-paren      "#8fcfdf")
+      (bg-err        "#ffddee") ; check with err
+      (bg-warning    "#ffe0aa") ; check with warning
+      (bg-info       "#ddf5cc") ; check with info
 
-  ;; Test contrast against fg (and intense) variant
-  ;; OkHSV S=20 V=95
-  (clapoto-red_bg     "#F1C4BC" nil)
-  (clapoto-orange_bg  "#F1D0B8" nil)
-  (clapoto-yellow_bg  "#F1E3B8" nil)
-  (clapoto-green_bg   "#E3F1BC" nil)
-  (clapoto-aqua-2_bg  "#BBF1E5" nil)
-  (clapoto-aqua-1_bg  "#B9ECF1" nil)
-  (clapoto-aqua_bg    "#BADEF1" nil)
-  (clapoto-blue_bg    "#BECFF1" nil)
-  (clapoto-purple_bg  "#ECCCF1" nil)
-  (clapoto-magenta_bg "#F1C3CA" nil)
+      (border        "#cdc2bb")
+      (cursor        "#cf1f00")
+      (fg-intense    "#000000")
 
-  (clapoto-leaf-1_bg   "#C0F1D5" nil)
-  (clapoto-leaf_bg   "#CCF1C4" nil)
-  (clapoto-brown_bg   "#F1D6B7" nil)
+      (modeline-err     "#900000")
+      (modeline-warning "#66008f")
+      (modeline-info    "#1f409f")
 
-  ;; Test contrast against bg and faded variant
-  (clapoto-accent1_int clapoto-leaf_int)
-  (clapoto-accent2_int clapoto-aqua-1_int)
-  (clapoto-accent3_int clapoto-blue_int)
-  (clapoto-accent4_int clapoto-green_int)
-  (clapoto-accent5_int clapoto-aqua_int)
+      ;; Mappings
+      (err red-warmer)
+      (warning yellow-warmer)
+      (info green)
 
-  ;; Test contrast against bg variant
-  (clapoto-accent1 clapoto-leaf)
-  (clapoto-accent2 clapoto-aqua-1)
-  (clapoto-accent3 clapoto-blue)
-  (clapoto-accent4 clapoto-green)
-  (clapoto-accent5 clapoto-aqua)
+      (link cyan-warmer)
+      (link-alt green-warmer)
+      (date cyan-cooler)
+      (name yellow)
+      (keybind red-warmer)
+      (prompt yellow)
 
-  ;; Test contrast against fg (and bright) variant
-  (clapoto-accent1_bg clapoto-leaf_bg)
-  (clapoto-accent2_bg clapoto-aqua-1_bg)
-  (clapoto-accent3_bg clapoto-blue_bg)
-  (clapoto-accent4_bg clapoto-green_bg)
-  (clapoto-accent5_bg clapoto-aqua_bg)
+      (builtin red-cooler)
+      (comment green-faint)
+      (constant red-warmer)
+      (fnname magenta)
+      (keyword yellow)
+      (preprocessor cyan-warmer)
+      (docstring yellow-faint)
+      (string green-warmer)
+      (type green-cooler)
+      (variable magenta-cooler)
 
-  (clapoto-comments clapoto-brown)
+      (rx-escape blue) ; compare with `string'
+      (rx-construct magenta-warmer)
 
-  ;; Package specific colors
-  (clapoto-delimiter-one clapoto-aqua)
-  (clapoto-delimiter-two clapoto-brown)
-  (clapoto-delimiter-three clapoto-leaf)
-  (clapoto-delimiter-four clapoto-green))
+      (accent-0 red)
+      (accent-1 green-cooler)
+      (accent-2 yellow)
+      (accent-3 magenta-warmer)
 
- (custom-theme-set-variables 'clapoto-light
-                             `(ansi-color-names-vector
-                               [,clapoto-bg-1
-                                ,clapoto-red_bg
-                                ,clapoto-green_bg
-                                ,clapoto-yellow_bg
-                                ,clapoto-blue_bg
-                                ,clapoto-purple_bg
-                                ,clapoto-aqua_bg
-                                ,clapoto-fg-1])
-                             `(pdf-view-midnight-colors '(,clapoto-fg . ,clapoto-bg))))
+      (mail-0 red)
+      (mail-1 green)
+      (mail-2 yellow)
+      (mail-3 green-cooler)
+      (mail-4 yellow-cooler)
+      (mail-5 blue)
 
-;;;###autoload
-(and load-file-name
-     (boundp 'custom-theme-load-path)
-     (add-to-list 'custom-theme-load-path
-                  (file-name-as-directory
-                   (file-name-directory load-file-name))))
+      (rainbow-0 yellow)
+      (rainbow-1 red)
+      (rainbow-2 green-warmer)
+      (rainbow-3 magenta-warmer)
+      (rainbow-4 cyan)
+      (rainbow-5 yellow-cooler)
+      (rainbow-6 magenta-cooler)
+      (rainbow-7 red-cooler)
+      (rainbow-8 green-cooler))
+    "The `clapoto-light' palette.")
 
-(provide-theme 'clapoto-light)
+  (ef-themes-theme clapoto-light clapoto-light-palette)
+
+  (provide-theme 'clapoto-light))
 ;;; clapoto-light-theme.el ends here
