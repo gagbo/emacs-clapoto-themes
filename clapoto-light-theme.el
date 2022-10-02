@@ -17,15 +17,15 @@
 
   (defconst clapoto-light-palette
     '(;; Basic tones
-      (bg-main     "#fff5ea")
-      (fg-main     "#584141")
-      (bg-dim      "#f3ebdc")
-      (fg-dim      "#63728f")
-      (bg-alt      "#e9e0d8")
-      (fg-alt      "#8f5f4a")
+      (bg-main     "#f3fff5")
+      (fg-main     "#242f21")
+      (bg-dim      "#e6f6e8")
+      (fg-dim      "#6e8e67")
+      (bg-alt      "#e4eee1")
+      (fg-alt      "#7e8d4d")
 
-      (bg-active   "#d9d0c8")
-      (bg-inactive "#f9f1e8")
+      (bg-active   "#c8d6d9")
+      (bg-inactive "#E9F6F9")
 
       ;; Basic hues for foreground values
       (red             "#ba2d2f")
@@ -96,20 +96,20 @@
       (cyan-graph-1-bg    "#afefff")
 
       ;; Special hues
-      (bg-mode-line  "#ffaf72") (fg-mode-line  "#542f38")
+      (bg-mode-line  "#c3ff7f") (fg-mode-line  "#3a4633")
       (bg-accent     "#106246") (fg-accent     "#ffffff")
-      (bg-completion "#ffd5d3")
+      (bg-completion "#d7ffdd")
       (bg-hover      "#b0e0df")
-      (bg-hover-alt  "#febcaf")
-      (bg-hl-line    "#f9e2b2")
-      (bg-region     "#f0d2df")
+      (bg-hover-alt  "#b6fed7")
+      (bg-hl-line    "#ccf9d4")
+      (bg-region     "#def0ce")
       (bg-paren      "#8fcfdf")
       (bg-err        "#ffddee") ; check with err
       (bg-warning    "#ffe0aa") ; check with warning
       (bg-info       "#ddf5cc") ; check with info
 
-      (border        "#cdc2bb")
-      (cursor        "#cf1f00")
+      (border        "#c0cdc0")
+      (cursor        "#114800")
       (fg-intense    "#000000")
 
       (modeline-err     "#900000")
@@ -128,39 +128,39 @@
       (keybind red-warmer)
       (prompt yellow)
 
-      (builtin red-cooler)
+      (builtin blue-cooler)
       (comment green-faint)
-      (constant red-warmer)
-      (fnname magenta)
-      (keyword yellow)
+      (constant blue-warmer)
+      (fnname cyan)
+      (keyword green-cooler)
       (preprocessor cyan-warmer)
       (docstring yellow-faint)
-      (string green-warmer)
+      (string blue-warmer)
       (type green-cooler)
-      (variable magenta-cooler)
+      (variable cyan-cooler)
 
-      (rx-escape blue) ; compare with `string'
+      (rx-escape red) ; compare with `string'
       (rx-construct magenta-warmer)
 
-      (accent-0 red)
+      (accent-0 blue)
       (accent-1 green-cooler)
       (accent-2 yellow)
       (accent-3 magenta-warmer)
 
-      (mail-0 red)
+      (mail-0 blue)
       (mail-1 green)
       (mail-2 yellow)
       (mail-3 green-cooler)
       (mail-4 yellow-cooler)
-      (mail-5 blue)
+      (mail-5 red)
 
       (rainbow-0 yellow)
       (rainbow-1 red)
       (rainbow-2 green-warmer)
-      (rainbow-3 magenta-warmer)
+      (rainbow-3 blue-warmer)
       (rainbow-4 cyan)
       (rainbow-5 yellow-cooler)
-      (rainbow-6 magenta-cooler)
+      (rainbow-6 blue-cooler)
       (rainbow-7 red-cooler)
       (rainbow-8 green-cooler))
     "The `clapoto-light' palette.")
