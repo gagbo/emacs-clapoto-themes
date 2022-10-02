@@ -104,9 +104,9 @@
       (bg-hl-line    "#ccf9d4")
       (bg-region     "#def0ce")
       (bg-paren      "#8fcfdf")
-      (bg-err        "#ffddee") ; check with err
-      (bg-warning    "#ffe0aa") ; check with warning
-      (bg-info       "#ddf5cc") ; check with info
+      (bg-err        "#ffddee")         ; check with err
+      (bg-warning    "#ffe0aa")         ; check with warning
+      (bg-info       "#ddf5cc")         ; check with info
 
       (border        "#c0cdc0")
       (cursor        "#114800")
@@ -139,7 +139,7 @@
       (type green-cooler)
       (variable cyan-cooler)
 
-      (rx-escape red) ; compare with `string'
+      (rx-escape red)                   ; compare with `string'
       (rx-construct magenta-warmer)
 
       (accent-0 blue)
@@ -154,15 +154,15 @@
       (mail-4 yellow-cooler)
       (mail-5 red)
 
-      (rainbow-0 yellow)
-      (rainbow-1 red)
+      (rainbow-0 cyan)
+      (rainbow-1 green)
       (rainbow-2 green-warmer)
       (rainbow-3 blue-warmer)
-      (rainbow-4 cyan)
-      (rainbow-5 yellow-cooler)
-      (rainbow-6 blue-cooler)
-      (rainbow-7 red-cooler)
-      (rainbow-8 green-cooler))
+      (rainbow-4 cyan-cooler)
+      (rainbow-5 magenta-cooler)
+      (rainbow-6 green-cooler)
+      (rainbow-7 blue-cooler)
+      (rainbow-8 magenta))
     "The `clapoto-light' palette.")
 
   (ef-themes-theme clapoto-light clapoto-light-palette)
