@@ -105,5 +105,11 @@ This function is added to the `clapoto-themes-post-load-hook'."
 
 (add-hook 'clapoto-themes-post-load-hook #'clapoto-themes-custom-faces)
 
+;;;###autoload
+(when load-file-name
+  (let ((dir (file-name-directory load-file-name)))
+    (unless (file-equal-p dir (expand-file-name "themes/" data-directory))
+      (add-to-list 'custom-theme-load-path dir))))
+
 (provide 'clapoto-themes)
 ;;; clapoto-themes.el ends here.
